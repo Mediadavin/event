@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Media Davin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="form-container" class="animate-move">
+    <h2>Media Davin Event</h2>
+    <p>Hadirnya Media Davin perdana memberikan sebuah event Berhadiah dan sekaligus bertepatan dengan Hari Raya Idul Adha, peserta yang mengisi akan di undi dan akan di kirim kan kode undian ke Gmail yang telah anda isi. Pastikan Anda mengirimkan dengan format yang Falid. (<strong>Tanggung Jawab Media Davin</strong>)</p>
+    <form action="https://script.google.com/macros/s/AKfycbwTGUgHnWlV26FU_svWgyij82dN_TO_v-1Uv7haf4VElGvicadA8NL-i6bjkWs7d1ai/exec" method="post">
+      <label for="nama">Gmail:</label>
+      <input type="text" id="nama" name="nama" required>
+      <label for="ktp">Nama:</label>
+      <input type="text" id="ktp" name="ktp" required>
+      <label for="no_hp">Nomor HP:</label>
+      <input type="tel" id="no_hp" name="no_hp" pattern="[0-9]{10,12}" required>
+      <input type="submit" value="Kirim Data">
+    </form>
+  </div>
+
+  <div id="footer" class="animate-move">
+    Copyright &copy; Media Davin. All Rights Reserved.
+  </div>
+</body>
+</html>

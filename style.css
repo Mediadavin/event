@@ -1,0 +1,110 @@
+body {
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #form-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards, moveIn 1s forwards;
+  }
+  
+  #form-container h2 {
+    text-align: center;
+    color: #007acc;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  #form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  #form-container input[type="text"],
+  #form-container input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  #form-container input[type="submit"] {
+    width: 100%;
+    background-color: #007acc;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #form-container input[type="submit"]:hover {
+    background-color: #005b99;
+  }
+  
+  #footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666;
+    opacity: 0;
+    animation: fadeIn 1s 0.5s forwards, moveIn 1s 0.5s forwards;
+  }
+  
+  /* Responsif Design */
+  @media (max-width: 600px) {
+    #form-container {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    #form-container h2 {
+      font-size: 20px;
+    }
+  
+    #form-container label {
+      font-size: 14px;
+    }
+  
+    #form-container input[type="submit"] {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  /* Animasi */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-move {
+    animation: fadeIn 1s forwards, moveIn 1s forwards;
+  }
+  
